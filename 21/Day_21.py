@@ -45,7 +45,6 @@ while game_on:
         if sqr == snake.all_sqr[0]:
             pass
         elif snake.head.distance(sqr) < 5:
-            print('Bug Saggggg')
             game_on = False
             scoreboard.game_over()
 screen.exitonclick()
