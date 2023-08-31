@@ -1,5 +1,5 @@
 #ASCII art: https://ascii.co.uk/art/treasure
-
+# You will choose your path through the given choices and make your own story. Let's see if you can survive!
 
 print('''
 *******************************************************************************
