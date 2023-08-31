@@ -2,6 +2,7 @@ import random
 from replit import clear
 from game_data import data
 from art import logo
+# This code is a test of your understanding of different Instagram account followers. :)
 
 print(logo)
 
