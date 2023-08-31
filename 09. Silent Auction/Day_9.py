@@ -1,5 +1,6 @@
 from replit import clear
 from art import logo
+# This code gets the bet of every user and then completely clears the screen before the next user. At last, it shows the highest bet.
 
 print(logo)
 print('Welcome to the secret auction program.')
