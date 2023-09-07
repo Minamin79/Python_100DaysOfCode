@@ -1,0 +1,22 @@
+{% extends 'base.html'%}
+
+{% block title %}
+{{ post.title }}
+{% endblock%}
+
+{% block content %}
+<h1>{{ post.title }} Details:</h1>
+<p>{{ post.author }}</p>
+<p>{{ post.body }}</p>
+<hr>
+<p>Created time: {{ post.created_date}}</p>
+
+{% endblock %}
+
+{% block comment %}
+{% for comment in post.get_active_comment %}
+    <p>Name: {{ comment.name }}</p>
+    <p>Comment: {{ comment.comment }} </p>
+    <hr>
+{% endfor %}
+{% endblock %}
