@@ -1,0 +1,28 @@
+<html>
+{% load static %}
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            {% block title %}
+            Base
+            {% endblock %}
+        </title>
+        <link href="{% static 'css/styles.css' %}" rel="stylesheet">
+    </head>
+    <body>
+        <div id="container">
+            {% block content %}
+            {% endblock %}
+            <h3>Comments:</h3>
+            {% block comment %}
+            {% endblock %}
+        </title>
+        </div>
+        <div id="sidebar">
+            <h2>My Blog</h2>
+            <a href="{% url 'post_list' %}">Home</a>
+            <br>
+            <a href="{% url 'contact_us' %}">Contact Us</a>
+        </div>
+    </body>
+</html>
